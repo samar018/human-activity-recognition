@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Activity Recognition - AI/ML Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Human Activity Recognition</h1>
+            <p class="subtitle">Deep Learning Model for Posture Classification</p>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>AI-Powered Activity Detection</h2>
+                <p>Using state-of-the-art deep learning models to classify 15 different human activities and postures</p>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <h2>Try It Out</h2>
+            <div class="upload-container">
+                <div class="upload-box" id="uploadBox">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                    </svg>
+                    <p>Drop an image here or click to upload</p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <button class="btn-primary" onclick="document.getElementById('imageInput').click()">Choose Image</button>
+                </div>
+                <div class="preview-container" id="previewContainer" style="display: none;">
+                    <img id="previewImage" alt="Preview">
+                    <button class="btn-secondary" id="analyzeBtn">Analyze Activity</button>
+                </div>
+            </div>
+            <div class="result-container" id="resultContainer" style="display: none;">
+                <h3>Prediction Results</h3>
+                <div class="prediction-card">
+                    <div class="prediction-label" id="predictionLabel">Walking</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidenceFill"></div>
+                    </div>
+                    <div class="confidence-text" id="confidenceText">95% Confidence</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="models-section">
+            <h2>Models Used</h2>
+            <div class="models-grid">
+                <div class="model-card">
+                    <h3>EfficientNet</h3>
+                    <p>Efficient convolutional neural network optimized for accuracy and speed</p>
+                </div>
+                <div class="model-card">
+                    <h3>ResNet50</h3>
+                    <p>Deep residual network with 50 layers for robust feature extraction</p>
+                </div>
+                <div class="model-card">
+                    <h3>VGG19</h3>
+                    <p>19-layer deep network known for excellent image classification</p>
+                </div>
+                <div class="model-card">
+                    <h3>AlexNet</h3>
+                    <p>Classic CNN architecture for image recognition tasks</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities-section">
+            <h2>Recognized Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-tag">Walking</div>
+                <div class="activity-tag">Running</div>
+                <div class="activity-tag">Standing</div>
+                <div class="activity-tag">Sitting</div>
+                <div class="activity-tag">Lying Down</div>
+                <div class="activity-tag">Climbing Stairs</div>
+                <div class="activity-tag">Descending Stairs</div>
+                <div class="activity-tag">Jumping</div>
+                <div class="activity-tag">Cycling</div>
+                <div class="activity-tag">Stretching</div>
+                <div class="activity-tag">Bending</div>
+                <div class="activity-tag">Reaching</div>
+                <div class="activity-tag">Pushing</div>
+                <div class="activity-tag">Pulling</div>
+                <div class="activity-tag">Lifting</div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Model Performance</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">95.2%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">18K</div>
+                    <div class="stat-label">Training Images</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">Activity Classes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">128x128</div>
+                    <div class="stat-label">Image Size</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Human Activity Recognition Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

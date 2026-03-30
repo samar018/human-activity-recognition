@@ -1,0 +1,42 @@
+
+---
+
+## **.gitignore**
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packages
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model files
+*.keras
+*.h5
+*.hdf5
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
